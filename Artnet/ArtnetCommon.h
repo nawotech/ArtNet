@@ -592,7 +592,7 @@ namespace artnet {
         }
         template <typename T = S>
         auto macAddress(uint8_t* mac) -> std::enable_if_t<std::is_same<T, WiFiUDP>::value> {
-            ETH.macAddress(mac);
+            macAddress(mac);
         }
 #endif  // ARTNET_ENABLE_ETH
 
